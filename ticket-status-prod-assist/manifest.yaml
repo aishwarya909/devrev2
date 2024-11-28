@@ -1,0 +1,28 @@
+version: "2"
+name: "Sentiment Analysis Handler"
+description: "Snap-In to process sentiment analysis events and take action based on sentiment data."
+
+service_account:
+  display_name: "DevRev Bot"
+
+event_sources:
+  organization:
+    - name: sentiment-analysis-webhook
+      description: "Source listening for sentiment analysis events."
+      display_name: Sentiment Analysis Webhook
+      type: sentiment-analysis-webhook
+      config:
+        event_types:
+          - sentiment_analysis
+
+functions:
+  - name: handle_sentiment_analysis_event
+    description: "Function to process sentiment analysis events."
+    
+
+automations:
+  - name: process_sentiment_analysis
+    source: sentiment-analysis-webhook
+    event_types:
+      - sentiment_analysis
+    function: handle_sentiment_analysis_event

@@ -1,0 +1,85 @@
+{
+  "payload": {
+    "id": "don:integration:dvrv-us-1:devo/test-org:webhook/qtuelXOO:webhook_event/Pvqbdx-9nvk",
+    "timestamp": "2023-05-04T06:49:29.565614Z",
+    "type": "work_updated",  
+    "unique_key": "ZG9uOmludGVncmF0aW9uOmR2cnYtdXMtMTpkZXZvLzhtNDZjcDdSOmV2ZW50X3NvdXJjZS9hMzZhYmY0Ni1mZmNhLTQ5YzMtYjRhZC1lY2E5ZDE0YmEwZDc=",
+    "webhook_id": "don:integration:dvrv-us-1:devo/test-org:webhook/qtuelXOO",
+    "sentiment_analysis_data": {  
+      "text": "The work description or comment that needs sentiment analysis",
+      "sentiment_score": 0.85, 
+      "sentiment_label": "positive" 
+    },
+    "work_updated": {
+      "old_work": {
+        "applies_to_part": {
+          "display_id": "PROD-1",
+          "id": "don:core:dvrv-us-1:devo/test-org:product/1",
+          "id_v1": "don:DEV-test-org:product:1",
+          "name": "Slack for Build",
+          "type": "product"
+        },
+        "body": "Old description of the work.",
+        "created_by": {
+          "display_handle": "test-user",
+          "display_id": "DEVU-1",
+          "display_name": "test-user",
+          "email": "test-user@example.com",
+          "full_name": "Test User",
+          "id": "don:identity:dvrv-us-1:devo/test-org:devu/1",
+          "id_v1": "don:DEV-test-org:dev_user:DEVU-1",
+          "state": "active",
+          "thumbnail": "https://api.devrev.ai/internal/display-picture/TestUser.svg",
+          "type": "dev_user"
+        },
+        "created_date": "2023-03-29T06:27:38.983Z",
+        "display_id": "TKT-126",
+        "id": "don:core:dvrv-us-1:devo/test-org:ticket/126",
+        "severity": "medium",
+        "stage": {
+          "name": "queued",
+          "ordinal": 700
+        },
+        "state": "open",
+        "title": "Old Ticket Title",
+        "type": "ticket"
+      },
+      "work": {
+        "applies_to_part": {
+          "display_id": "PROD-1",
+          "id": "don:core:dvrv-us-1:devo/test-org:product/1",
+          "id_v1": "don:DEV-test-org:product:1",
+          "name": "Slack for Build",
+          "type": "product"
+        },
+        "body": "Updated description of the work.",
+        "created_by": {
+          "display_handle": "test-user",
+          "display_id": "DEVU-1",
+          "display_name": "test-user",
+          "email": "test-user@example.com",
+          "full_name": "Test User",
+          "id": "don:identity:dvrv-us-1:devo/test-org:devu/1",
+          "id_v1": "don:DEV-test-org:dev_user:DEVU-1",
+          "state": "active",
+          "thumbnail": "https://api.devrev.ai/internal/display-picture/TestUser.svg",
+          "type": "dev_user"
+        },
+        "created_date": "2023-03-29T06:27:38.983Z",
+        "display_id": "TKT-126",
+        "id": "don:core:dvrv-us-1:devo/test-org:ticket/126",
+        "severity": "medium",
+        "stage": {
+          "name": "awaiting_product_assist",
+          "ordinal": 3250
+        },
+        "state": "in_progress",
+        "title": "Updated Ticket Title",
+        "type": "ticket"
+      }
+    }
+  },
+  "event_sources": {
+    "sentiment_analysis": "don:integration:dvrv-us-1:devo/test-org:event_source/00000001-0001-0001-0001-00000002"
+  }
+}
